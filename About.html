@@ -14,7 +14,7 @@ font-awesome.min.css" rel="stylesheet">
     <body>
         <section class="sub-header">
             <nav>
-                <a href="index.html"><img src="images/logo1.png"></a>
+                <a href="index.html"><img src="Images/logo1.png"></a>
                 <div class="nav-links" id="navLinks">
                 <i class="fa fa-solid fa-times" onclick="hideMenu()"></i>
                     <ul>
@@ -40,7 +40,11 @@ font-awesome.min.css" rel="stylesheet">
                         <a href="index.html" class="hero-btn" onclick="playRandomAudio()">Do not click it please</a>  
                 </div>
                 <div class="about-col">
-                        <img src="images/Amsir.png" onclick="audio.play()">
+                        <img src="Images/Amsir.png" onclick="audio.play()">
+                    <script>
+                            const audio = new Audio()
+                            audio.src = "Audio/Amsir.mp3"
+                        </script>
                         <script> const audioFiles = [
                             "Audio/niet.mp3"
                         ];
