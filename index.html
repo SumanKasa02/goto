@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Our Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=
+Iceland&display=swap" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/
+font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo1.png"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Courses.html">Class 11 notes</a></li>
+                        <li><a href="Questions.html">EXTRA QUESTIONS</a></li>
+                        <li><a href="Others.html">BLOG</a></li>
+                        <li><a href="Others.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1> Welcome soldier</h1>
+                <p>In this website, you will be doing STUDY. 
+                    That's all, now START</p>
+                    <a href="#" class="hero-btn" onclick="playRandomAudio()">Be better than your Cousin</a>                
+            </div>
+
+        <script> const audioFiles = [
+            "Audio/Cousin1.mp3",
+            "Audio/Cousin2.mp3",
+            "Audio/Masters.mp3"
+        ];
+        function playRandomAudio() {
+            // Select a random index from the audioFiles array
+            const randomIndex = Math.floor(Math.random() * audioFiles.length);
+            
+            // Create a new Audio object and set its source
+            const audio = new Audio(audioFiles[randomIndex]);
+            
+            // Play the audio
+            audio.play();
+        }
+        </script>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+        </script>
+
+
+        </section>
+
+<section class="course">
+    <h1>Notes of class 11</h1>
+    <p>AILE LAI KEI CHAINA PACHI AAUNU</p>
+    <div class="row">
+        <div class="course-col">
+          <h3>Computer system</h3> 
+        <ul>
+            <li>Definitions, characteristics and application of computer</li>
+            <li>Evolution of computer technology</li>
+            <li>Generations of computers</li>
+            <li>Super, Mainframe, Mini and Microcomputers</li>
+            <li>Components of computer system</li>
+            <li>Basic Input/Output devices</li>
+        </ul>
+        </div>
+        <div class="course-col">
+            <h3>Number system and conversion Boolean Logic</h3> 
+            <ul>
+                <li>Number system definition characteristics</li>
+                <li>Types of number system</li>
+                <li>Comversion of number system</li>
+                <li>1's and 2's Complement Subtraction</li>
+                <li>Boolean logic</li>
+                <li>Basic Operators</li>
+            </ul>
+          </div>
+          <div class="course-col">
+            <h3>Computer software and operating system</h3> 
+            <ul>
+                <li>Introduction to software</li>
+                <li>Software types definitions and features</li>
+                <li>Operating System</li>
+                <li>Functions, features advantages of OS</li>
+                <li>Types of OS on the basis of processing and user interface</li>
+                <li>Some important Operating System in use</li>
+            </ul>
+          </div>
+          <div class="course-col">
+            <h3>Application Package (Word, Excel, Powerpoint)</h3> 
+            <ul><li>Introduction to Office Package</li>
+            <li>Word processor, Presentation tool, spreadsheet package,<br> database management system</li>
+            <li>Itroduction to domain-specific tools</li>
+            </ul>
+          </div>
+          <div class="course-col">
+            <h3>Programming concepts and logics (C language)</h3> 
+            <ul><li>Programming Concept</li>
+                <li>Introduction to programming languages</li>
+                <li>Low level, High level, 4 GL programming languages</li>
+                <li>C Programming Languages</li>
+                </ul>
+          </div>
+          <div class="course-col">
+            <h3>Web Technology-I (HTML + CSS)</h3> 
+            <ul><li>Web development introduction</li>
+                <li>Web browsers and search Engines</li>
+                <li>Overview of various internet & web technologies</li>
+                <li>HTML: The Language of the Web</li>
+                </ul>
+          </div>
+          <div class="course-col">
+            <h3>Multimedia</h3> 
+            <ul><li>Introduction to Multimedia</li>
+                <li>Component of Multimedia</li>
+                <li>Application of Multimedia</li>
+                </ul>
+          </div>
+          <div class="course-col">
+            <h3>Information security and cyber law</h3> 
+            <ul><li> Digital society and computer ethics </li>
+                <li>Concept of Information security and cyber crime</li>
+                <li>Concept of Cyber Law in Nepal </li>
+                </ul>
+          </div>
+    </div>
+</section>
+
+
+
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+<section class="footer">
+    <h3> About </h3>
+    <p>This website is totally for educational purposes, because nothing screams 
+        "high-quality learning" like this perfectly polished masterpiece of pure, 
+        solemn knowledge. Absolutely no distractions or ulterior motives here whatsoever.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p></p>
+</section>
+
+    </body>
+</html>
