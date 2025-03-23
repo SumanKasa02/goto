@@ -14,7 +14,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(6, 93, 108, 0.445),rgba(4,9,30,0.8)),url(images/ogclz3.png);
+    background-image: linear-gradient(rgba(6, 93, 108, 0.445),rgba(4,9,30,0.8)),url(Images/ogclz3.png);
     background-position: center;
     background-size: cover;
     position: relative;
