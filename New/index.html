@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Testsite953</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=
+Iceland&display=swap" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/
+font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/logo1.png"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Courses.html">Class 12 notes</a></li>
+                        <li><a href="Questions.html">EXTRA QUESTIONS</a></li>
+                        <li><a href="Others.html">BLOG</a></li>
+                        <li><a href="Others.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1> Welcome to the fortress</h1>
+                <p>In this website, you will be doing STUDY. 
+                    That's all, now START</p>
+                    <a href="#" class="hero-btn" onclick="playRandomAudio()">Be better than your Cousin</a>                
+            </div>
+
+        <script> const audioFiles = [
+            "Audio/Cousin1.mp3",
+            "Audio/Cousin2.mp3",
+            "Audio/Masters.mp3"
+        ];
+        function playRandomAudio() {
+            // Select a random index from the audioFiles array
+            const randomIndex = Math.floor(Math.random() * audioFiles.length);
+            
+            // Create a new Audio object and set its source
+            const audio = new Audio(audioFiles[randomIndex]);
+            
+            // Play the audio
+            audio.play();
+        }
+        </script>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+        </script>
+
+
+        </section>
+
+<section class="course">
+    <h1>Notes of class 12</h1>
+    <p>The website includes following things regarding the syllabus of class 12</p>
+    <div class="row">
+        <div class="course-col">
+          <h3>Database Management System</h3> 
+        <ul>
+            <li>Data Information, Features of Information Database and its Purpose</li>
+            <li>Terminologies in Database</li>
+            <li>Types of Database Model</li>
+            <li>Integrity Constraints and Types</li>
+            <li>Normalization, Centralized and Distributed Database</li>
+            <li>Database Security</li>
+            <li>SQL DATATYPES</li>
+        </ul>
+        </div>
+        <div class="course-col">
+            <h3>Data Communication and Networking</h3> 
+            <ul>
+                <li>Not yet</li>
+            </ul>
+          </div>
+          <div class="course-col">
+            <h3>Web Tech-II</h3> 
+            <ul>
+                <li>Not yet</li>
+            </ul>
+          </div>
+          <div class="course-col">
+            <h3>C Programming-II</h3> 
+            <ul><li>Not yet</li>
+            </ul>
+          </div>
+          <div class="course-col">
+            <h3>Object Oriented Programming</h3> 
+            <ul><li>Not yet</li>
+                </ul>
+          </div>
+          <div class="course-col">
+            <h3>Software development life cycle</h3> 
+            <ul><li>Not yet</li>
+                </ul>
+          </div>
+          <div class="course-col">
+            <h3>Recent Trends in Technology</h3> 
+            <ul><li>Not yet</li>
+                </ul>
+          </div>
+    </div>
+</section>
+
+
+
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+<section class="footer">
+    <h3> About </h3>
+    <p>This website is totally for educational purposes, because nothing screams 
+        "high-quality learning" like this perfectly polished masterpiece of pure, 
+        solemn knowledge. Absolutely no distractions or ulterior motives here whatsoever.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p></p>
+</section>
+
+    </body>
+</html>
